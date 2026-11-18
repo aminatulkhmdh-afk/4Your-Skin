@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="4Your Skin, klinik kecantikan ramah di Madiun dengan harga transparan, kenali kulitmu, booking online, dan skincare 4Your Skin.">
+    <title>4Your Skin | Klinik Kecantikan Madiun</title>
+    <link rel="icon" href="Your Skin.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#konten-utama">Lompat ke konten</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <!-- Logo: simpan file di Your Skin.png. Bila file belum ada, teks "4Your Skin" tampil otomatis. -->
+        <a class="logo" href="#/beranda" aria-label="4Your Skin, kembali ke Beranda">
+          <img class="logo-img" src="Your Skin.png" alt="Logo 4Your Skin" width="190" height="90"
+               onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+          <span class="logo-teks" hidden><span>4</span>Your Skin</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="menu-utama"><span aria-hidden="true">☰</span> Menu</button>
+        <nav id="menu-utama" class="menu-utama" aria-label="Navigasi utama">
+          <a href="#/perawatan">Perawatan</a><a href="#/kuis">Kenali Kulitmu</a><a href="#/produk">Produk</a>
+          <a href="#/lokasi">Lokasi &amp; Jam</a><a href="#/edukasi">Edukasi</a><a class="nav-booking" href="#/booking">Booking</a>
+        </nav>
+        <div class="header-actions">
+          <a class="header-booking" href="#/booking">Booking</a>
+          <a class="cart-link" href="#/keranjang" aria-label="Keranjang, 0 barang"><span aria-hidden="true">🛍</span><span class="cart-text">Keranjang</span><b id="cart-badge">0</b></a>
+        </div>
+      </div>
+    </header>
+
+    <main id="konten-utama" tabindex="-1">
+      <section class="halaman" data-halaman="beranda" aria-labelledby="judul-beranda">
+        <div id="home-content"></div>
+      </section>
+
+      <section class="halaman" data-halaman="perawatan" aria-labelledby="judul-perawatan">
+        <div class="page-head"><div class="container"><p class="breadcrumb"><a href="#/beranda">Beranda</a> <span>›</span> Perawatan</p><p class="eyebrow">Solusi yang mudah dipahami</p><h1 id="judul-perawatan" tabindex="-1">Perawatan untuk setiap cerita kulit</h1><p>Pilih berdasarkan kebutuhanmu, lihat harga sejak awal, lalu booking tanpa perlu chat admin.</p></div></div>
+        <div class="container section-block"><div id="treatment-filters" class="filter-bar" aria-label="Filter masalah kulit"></div><div id="treatment-catalog"></div></div>
+      </section>
+
+      <section class="halaman" data-halaman="kuis" aria-labelledby="judul-kuis">
+        <div class="page-head"><div class="container"><p class="breadcrumb"><a href="#/beranda">Beranda</a> <span>›</span> Kenali Kulitmu</p><p class="eyebrow">Kenali kulitmu</p><h1 id="judul-kuis" tabindex="-1">Kuis jenis kulit 1 menit</h1><p>Empat pertanyaan sederhana untuk membantumu memulai rutinitas yang lebih tepat.</p></div></div>
+        <div class="container narrow section-block"><div id="quiz-app" class="form-card"></div></div>
+      </section>
+
+      <section class="halaman" data-halaman="produk" aria-labelledby="judul-produk">
+        <div class="page-head"><div class="container"><p class="breadcrumb"><a href="#/beranda">Beranda</a> <span>›</span> Produk</p><p class="eyebrow">Rangkaian skincare 4Your Skin</p><h1 id="judul-produk" tabindex="-1">Skincare sesuai kebutuhan kulitmu</h1><p>Produk 4Your Skin dengan kandungan dan cara pakai yang dijelaskan apa adanya.</p></div></div>
+        <div class="container section-block">
+          <p class="help-text">Produk 4Your Skin dapat dikonsultasikan dengan dokter klinik untuk memilih rangkaian yang sesuai.</p>
+          <div id="product-filters" class="filter-stack"></div><div id="product-catalog" class="card-grid four"></div>
+        </div>
+      </section>
+
+      <section class="halaman" data-halaman="lokasi" aria-labelledby="judul-lokasi">
+        <div class="page-head"><div class="container"><p class="breadcrumb"><a href="#/beranda">Beranda</a> <span>›</span> Lokasi &amp; Jam</p><p class="eyebrow">Datang dengan tenang</p><h1 id="judul-lokasi" tabindex="-1">Lokasi, jam buka, dan jadwal dokter</h1><p>Semua informasi kunjungan tersedia di satu tempat agar kamu mudah mengatur waktu.</p></div></div>
+        <div id="location-content"></div>
+      </section>
+
+      <section class="halaman" data-halaman="edukasi" aria-labelledby="judul-edukasi">
+        <div class="page-head"><div class="container"><p class="breadcrumb"><a href="#/beranda">Beranda</a> <span>›</span> Edukasi</p><p class="eyebrow">Baca sebelum mencoba</p><h1 id="judul-edukasi" tabindex="-1">Edukasi kulit tanpa bahasa rumit</h1><p>Artikel pendek yang ditinjau dokter agar kamu bisa membuat keputusan lebih tenang.</p></div></div>
+        <div class="container section-block"><div id="article-list" class="card-grid three"></div><div class="education-faq-link"><div><p class="eyebrow">Masih ada pertanyaan?</p><h2>Temukan jawaban sebelum berkunjung</h2><p>Baca enam pertanyaan yang paling sering ditanyakan tentang booking, keamanan, harga, dan jam buka.</p></div><a class="btn btn-secondary" href="#/faq">Lihat FAQ</a></div></div>
+      </section>
+
+      <section class="halaman" data-halaman="artikel" aria-labelledby="judul-artikel">
+        <div id="article-detail"></div>
+      </section>
+
+      <section class="halaman" data-halaman="booking" aria-labelledby="judul-booking">
+        <div class="page-head"><div class="container"><p class="breadcrumb"><a href="#/beranda">Beranda</a> <span>›</span> Booking</p><p class="eyebrow">Selesai kurang dari 2 menit</p><h1 id="judul-booking" tabindex="-1">Atur jadwal perawatanmu</h1><p>Pilih layanan dan waktu yang nyaman. Booking dilakukan sepenuhnya di website ini.</p></div></div>
+        <div class="container narrow section-block"><div id="booking-app" class="form-card"></div></div>
+      </section>
+
+      <section class="halaman" data-halaman="keranjang" aria-labelledby="judul-keranjang">
+        <div class="page-head"><div class="container"><p class="breadcrumb"><a href="#/beranda">Beranda</a> <span>›</span> Keranjang</p><p class="eyebrow">Belanja dengan jelas</p><h1 id="judul-keranjang" tabindex="-1">Keranjang &amp; checkout</h1><p>Periksa produk, jumlah, dan total, lalu pilih cara bayar yang paling mudah untukmu.</p></div></div>
+        <div class="container section-block"><div id="cart-app"></div></div>
+      </section>
+
+      <section class="halaman" data-halaman="riwayat" aria-labelledby="judul-riwayat">
+        <div class="page-head"><div class="container"><p class="breadcrumb"><a href="#/beranda">Beranda</a> <span>›</span> Aktivitas Saya</p><p class="eyebrow">Semua tersimpan di perangkatmu</p><h1 id="judul-riwayat" tabindex="-1">Aktivitas Saya</h1><p>Lihat booking, pesanan, hasil kuis, poin loyalitas, dan pengingat kontrol dalam satu halaman.</p></div></div>
+        <div class="container section-block"><div id="history-content"></div></div>
+      </section>
+
+      <section class="halaman" data-halaman="faq" aria-labelledby="judul-faq">
+        <div class="page-head"><div class="container"><p class="breadcrumb"><a href="#/beranda">Beranda</a> <span>›</span> FAQ</p><p class="eyebrow">Jawaban tanpa berputar-putar</p><h1 id="judul-faq" tabindex="-1">Pertanyaan yang sering ditanyakan</h1><p>Temukan jawaban singkat tentang booking, keamanan, harga, dan kunjungan.</p></div></div>
+        <div class="container narrow section-block"><div id="faq-app"></div></div>
+      </section>
+
+      <section class="halaman" data-halaman="tidak-ditemukan" aria-labelledby="judul-404">
+        <div class="empty-page container"><span class="empty-icon" aria-hidden="true">◇</span><p class="eyebrow">404</p><h1 id="judul-404" tabindex="-1">Halaman tidak ditemukan</h1><p>Tautan ini mungkin sudah berubah. Mari kembali ke halaman utama.</p><a class="btn btn-primary" href="#/beranda">Kembali ke Beranda</a></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo footer-logo" href="#/beranda" aria-label="4Your Skin, kembali ke Beranda">
+  <img class="logo-img" src="Your Skin.png" alt="Logo 4Your Skin" width="170" height="70"
+       onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+  <span class="logo-teks" hidden><span>4</span>Your Skin</span>
+</a>
+          <p>Klinik kulit ramah untuk langkah pertamamu. Harga jelas, pilihan sederhana.</p>
+          <p><strong>WhatsApp pertanyaan cepat:</strong><br><a data-wa-link href="#">0822-2808-7492</a><br><small>WhatsApp bukan untuk booking.</small></p>
+        </div>
+        <div>
+          <h2>Kunjungi kami</h2>
+          <p>Jl. Sehat No. 24, Kota Madiun<br><small></small></p>
+          <p>Senin–Sabtu 09.00–20.00<br>Minggu tutup</p>
+          <a href="#/lokasi">Lihat lokasi &amp; jadwal</a>
+        </div>
+        <div>
+          <h2>Tautan cepat</h2>
+          <ul>
+            <li><a href="#/perawatan">Harga perawatan</a></li>
+            <li><a href="#/booking">Booking</a></li>
+            <li><a href="#/produk">Produk</a></li>
+            <li><a href="#/faq">FAQ lengkap</a></li>
+            <li><a href="#/riwayat">Aktivitas Saya</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Ikuti kabar kami</h2>
+          <p class="socials">
+            <a href="https://www.instagram.com/4your.skin_" target="_blank" rel="noopener" aria-label="Instagram 4Your Skin (buka di tab baru)"><span aria-hidden="true">📷</span> Instagram</a>
+            <a href="https://www.tiktok.com/@4yourskinofficial" target="_blank" rel="noopener" aria-label="TikTok 4Your Skin (buka di tab baru)"><span aria-hidden="true">🎵</span> TikTok</a>
+          </p>
+          <p><small>Pembayaran: QRIS, transfer bank, atau tunai.</small></p>
+        </div>
+      </div>
+      <div class="footer-bottom container"><p>© <span id="year"></span> 4Your Skin. Informasi kesehatan bukan pengganti konsultasi dokter.</p></div>
+    </footer>
+
+    <a id="wa-floating" class="wa-floating" href="#" target="_blank" rel="noopener"><span aria-hidden="true">💬</span><span>Hubungi Kami</span></a>
+    <button id="back-to-top" class="back-to-top" type="button"><span aria-hidden="true">↑</span> Kembali ke atas</button>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="modal-root"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
